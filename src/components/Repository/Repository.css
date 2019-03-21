@@ -27,4 +27,5 @@
 .repository_link > a:hover {
     color: #000;
     font-weight: bold;
+    background-color: hsla(55, 100%, 65%, 0.8);
 }
