@@ -1,8 +1,17 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: hsla(55, 100%, 65%, 0.8);
+}
+
 .repository_row {
   display: grid;
   grid-template-columns: minmax(30vw, 35%) minmax(50vw, 50%)  auto;  
-  background: #fff;
-  padding: 5px 5px;
+  background: #eeeeee;
+  padding: 10px 5px;
 }
 
 .repository_name {

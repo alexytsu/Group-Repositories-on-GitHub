@@ -6,8 +6,12 @@ export default function RepositoryLine(props) {
 
   return (
     <div className="repository_row">
-      <div className="repository_name">{repo.name}</div>
-      <div className="repository_description">{repo.description}</div>
+      <div className="repository_name">
+        <a href={repo.html_url}> {repo.name}</a>
+      </div>
+      <div className="repository_description">
+        <a href={repo.html_url}>{repo.description}</a>
+      </div>
       <div className="repository_link">
         <a href={repo.html_url}>Link</a>
       </div>

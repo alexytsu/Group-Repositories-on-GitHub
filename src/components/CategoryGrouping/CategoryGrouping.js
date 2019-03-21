@@ -12,7 +12,7 @@ export default function CategoryGrouping(props) {
 
   return (
     <div className="card">
-      <h2>{props.name}</h2>
+      <h2># {props.name}</h2>
       {category_rows}
     </div>
   );

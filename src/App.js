@@ -53,15 +53,16 @@ class App extends Component {
           <h1>Group Repos on GitHub</h1>
         </div>
         <div className="skinny">
-        <div className="intro">
-          <p>
-            GitHub doesn't support grouping of repositories but I like to keep
-            things organised. Uses data pulled from the GitHub API. Repos are
-            "categorised" by adding a <em>tag</em> on GitHub in the format "cat-
-            <em>category</em>"
-          </p>
-        </div>
-        {rendered_categories}
+          <div className="intro">
+            <p>
+              GitHub doesn't support grouping of repositories but I like to keep
+              things organised. Uses data pulled from the GitHub API. Repos are
+              "categorised" by adding a <em>tag</em> on GitHub in the format
+              "cat-
+              <em>category</em>"
+            </p>
+          </div>
+          {rendered_categories}
         </div>
       </div>
     );
