@@ -5,5 +5,5 @@ export async function getUserRepositories(username) {
     }
   });
   let data = await response.json();
-  return data;
+  return  data;
 }

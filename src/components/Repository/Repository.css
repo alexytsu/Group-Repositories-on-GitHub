@@ -1,0 +1,30 @@
+.repository_row {
+  display: grid;
+  grid-template-columns: minmax(30vw, 35%) minmax(50vw, 50%)  auto;  
+  background: #fff;
+  padding: 5px 5px;
+}
+
+.repository_name {
+    font-weight: bold;
+    min-width: 30vw;
+}
+
+.repository_description {
+    color: hsla(10, 50%, 10%, 0.8);
+}
+
+.repository_link > a {
+    text-decoration: none;
+    color: hsla(10, 50%, 10%, 0.8);
+}
+
+.repository_link > a:visited {
+    text-decoration: none;
+    color: hsla(10, 50%, 10%, 0.8);
+}
+
+.repository_link > a:hover {
+    color: #000;
+    font-weight: bold;
+}
