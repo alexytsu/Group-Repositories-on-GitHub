@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import "./App.css";
+/** @jsx jsx */
+import { jsx } from "@emotion/core";
+import { Component } from "react";
 import CategoryGrouping from "./components/CategoryGrouping/CategoryGrouping";
 import { getUserRepositories } from "./api/repositories";
+import CSSReset from "./components/css-reset";
 
 var _ = require("lodash");
 
@@ -48,20 +50,17 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        <div className="header">
-          <h1>Group Repos on GitHub</h1>
-        </div>
-        <div className="skinny">
-          <div className="intro">
-            <p>
-              GitHub doesn't support grouping of repositories but I like to keep
-              things organised. Uses data pulled from the GitHub API. Repos are
-              "categorised" by adding a <em>tag</em> on GitHub in the format
-              "cat-
-              <em>category</em>"
-            </p>
-          </div>
+      <div>
+        <CSSReset></CSSReset>
+        <div
+          css={{
+            fontFamily: `-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif`,
+            padding: 16,
+            maxWidth: 1024,
+            marginRight: "auto",
+            marginLeft: "auto"
+          }}
+        >
           {rendered_categories}
         </div>
       </div>
