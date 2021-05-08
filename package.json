@@ -5,7 +5,7 @@
   "homepage": "https://alexytsu.github.io/Group-Repositories-on-GitHub",
   "dependencies": {
     "@emotion/core": "^10.0.28",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
